@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="home_bg">#101722</color>
+    <color name="home_text_primary">#F2F5FB</color>
+    <color name="home_text_secondary">#A8B3C5</color>
+    <color name="home_card_shadow">#40000000</color>
+    <color name="home_soft_card">#1A2331</color>
+    <color name="home_desc_card">#17212E</color>
+    <color name="home_border">#243244</color>
+    <color name="community_tab_inactive">#223040</color>
+    <color name="progress_track">#32475E</color>
+    <color name="chat_bubble_user">#1E3552</color>
+    <color name="chat_bubble_other">#3A2C23</color>
+</resources>

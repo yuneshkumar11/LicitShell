@@ -1,0 +1,60 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M60,34
+                          C47.3,34 38,43 38,55
+                          C38,62.8 42.5,68.9 47.8,73.7
+                          C50.8,76.4 53,80 53,84
+                          V86
+                          C53,88.2 54.8,90 57,90
+                          H63
+                          C65.2,90 67,88.2 67,86
+                          V84
+                          C67,80 69.2,76.4 72.2,73.7
+                          C77.5,68.9 82,62.8 82,55
+                          C82,43 72.7,34 60,34 Z"
+        android:strokeColor="@color/splash_logo_blue"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="6" />
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M53,96 H67"
+        android:strokeColor="@color/splash_logo_blue"
+        android:strokeLineCap="round"
+        android:strokeWidth="6" />
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M56,103 H64"
+        android:strokeColor="@color/splash_logo_blue"
+        android:strokeLineCap="round"
+        android:strokeWidth="6" />
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M60,16 V25"
+        android:strokeColor="@color/splash_logo_blue"
+        android:strokeLineCap="round"
+        android:strokeWidth="6" />
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M38,25 L44,31"
+        android:strokeColor="@color/splash_logo_blue"
+        android:strokeLineCap="round"
+        android:strokeWidth="6" />
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M82,25 L76,31"
+        android:strokeColor="@color/splash_logo_blue"
+        android:strokeLineCap="round"
+        android:strokeWidth="6" />
+</vector>

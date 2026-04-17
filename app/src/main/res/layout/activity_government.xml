@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/governmentRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_home_header"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/government_portal_title"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/government_portal_desc"
+                    android:textColor="#EAFFFFFF"
+                    android:textSize="14sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnCategoryEducation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:background="@drawable/bg_government_chip_active"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="@string/category_education"
+                            android:textAllCaps="false"
+                            android:textColor="@color/splash_logo_blue"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnCategoryFinance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bg_government_chip_inactive"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="@string/category_finance"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnCategoryLegal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bg_government_chip_inactive"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="@string/category_legal_services"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnCategoryOther"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bg_government_chip_inactive"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="@string/category_other_services"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sectionEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/section_education"
+                    android:textColor="@color/home_text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <include android:id="@+id/govCardEducation" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardDiksha" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardSwayam" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardScholarship" layout="@layout/item_government_link" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sectionFinance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/section_finance"
+                    android:textColor="@color/home_text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <include android:id="@+id/govCardIncomeTax" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardPan" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardGst" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardPmKisan" layout="@layout/item_government_link" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sectionLegal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/section_legal_services"
+                    android:textColor="@color/home_text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <include android:id="@+id/govCardLawMin" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardDoj" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardNalsa" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardIndiaCode" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardSupremeCourt" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardEcourts" layout="@layout/item_government_link" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sectionOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/section_other_services"
+                    android:textColor="@color/home_text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <include android:id="@+id/govCardDigilocker" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardUidai" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardPassport" layout="@layout/item_government_link" />
+                <include android:id="@+id/govCardUmang" layout="@layout/item_government_link" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "346645781199",
+    "project_id": "licit-shell-app",
+    "storage_bucket": "licit-shell-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346645781199:android:219f1698bf8acd122175ba",
+        "android_client_info": {
+          "package_name": "com.example.licitshell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHhU_xlaZLwlGKX2Lj7HT7PLU67bBQoaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

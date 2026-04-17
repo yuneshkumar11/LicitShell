@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/moduleLibrary"
+    android:layout_width="0dp"
+    android:layout_height="152dp"
+    android:layout_weight="1"
+    android:background="@drawable/bg_home_action_card"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <FrameLayout android:layout_width="42dp" android:layout_height="42dp" android:background="@drawable/bg_chip_green">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:src="@drawable/ic_book"/>
+    </FrameLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/library" android:textColor="@color/home_text_primary" android:textSize="18sp" android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/library_subtitle" android:textColor="@color/home_text_secondary" android:textSize="14sp" />
+</LinearLayout>
